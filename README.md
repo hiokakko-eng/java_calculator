@@ -24,7 +24,7 @@ Java 11による、四則演算と括弧付き数式に対応できるコンソ�
 
 - このアルゴリズムの要であるクラスの内容です。Token、計算式中の現在のPosition、親のPositionを、parsedTokenが保持します。Calculatorは、このparsedTokenのListを受取り、CalcRangeは（）後ろから検索し計算範囲を決定し、reduceRangeはその範囲を縮約しながら、最終的に計算結果を導きます。
 
-```
+```mermaid
 classDiagram
     direction LR
 
@@ -104,7 +104,7 @@ flowchart TB
 
 計算結果を "BigDecimal" で扱い、"toPlainString()" によってコンソールに表示します。
 
-### 〈実行例〉
+## 〈実行例〉
 
 入力は1文字ごとにEnterキーで確定します。
 
